@@ -83,7 +83,7 @@ npx @happytools/ai-cowork init
 ### Using Bun
 
 ```bash
-bun install -g ai-cowork
+bun install -g @happytools/ai-cowork
 ```
 
 ### From Source
