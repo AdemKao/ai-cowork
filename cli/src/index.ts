@@ -3,6 +3,7 @@ import { init } from './commands/init.js';
 import { list } from './commands/list.js';
 import { update } from './commands/update.js';
 import { add } from './commands/add.js';
+import { registerSyncCommand } from './commands/sync.js';
 
 const program = new Command();
 
@@ -39,5 +40,8 @@ program
   .argument('<type>', 'Type to add (stack, skill)')
   .argument('<name>', 'Name of stack or skill')
   .action(add);
+
+// Register sync subcommands
+registerSyncCommand(program);
 
 program.parse();
