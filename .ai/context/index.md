@@ -21,8 +21,10 @@ Code quality, naming, security, and testing standards.
 | File | Trigger Keywords | Description |
 |------|-----------------|-------------|
 | `code-quality.md` | code quality, clean code, best practices | General code quality guidelines |
+| `dbml.md` | dbml, database, schema, tables | Database schema design (DBML) |
 | `documentation.md` | docs, documentation, comments | Documentation standards |
 | `naming.md` | naming, conventions, variables | Naming conventions |
+| `openapi.md` | openapi, swagger, api spec, endpoints | API specification (OpenAPI) |
 | `security.md` | security, auth, validation | Security best practices |
 | `testing.md` | tests, testing, coverage | Testing standards |
 
@@ -41,7 +43,10 @@ Development processes and procedures.
 | File | Trigger Keywords | Description |
 |------|-----------------|-------------|
 | `bdd-tdd.md` | bdd, tdd, test-driven | BDD/TDD development workflow |
+| `bdd-tdd-frontend.md` | frontend testing, react testing | Frontend BDD/TDD workflow |
+| `bdd-tdd-backend.md` | backend testing, api testing | Backend BDD/TDD workflow |
 | `code-review.md` | review, pr, pull request | Code review process |
+| `contract-driven.md` | contract, api-first, dbml, openapi | Contract-driven development |
 | `delegation.md` | delegate, agent, subagent | Agent delegation workflow |
 | `git-workflow.md` | git, branch, commit | Git branching and commit workflow |
 
@@ -158,13 +163,18 @@ AI agents for specialized tasks.
 │   ├── core/
 │   │   ├── standards/         # Coding standards
 │   │   │   ├── code-quality.md
+│   │   │   ├── dbml.md
 │   │   │   ├── documentation.md
 │   │   │   ├── naming.md
+│   │   │   ├── openapi.md
 │   │   │   ├── security.md
 │   │   │   └── testing.md
 │   │   └── workflows/         # Development workflows
 │   │       ├── bdd-tdd.md
+│   │       ├── bdd-tdd-frontend.md
+│   │       ├── bdd-tdd-backend.md
 │   │       ├── code-review.md
+│   │       ├── contract-driven.md
 │   │       ├── delegation.md
 │   │       └── git-workflow.md
 │   ├── project/               # Project-specific context
