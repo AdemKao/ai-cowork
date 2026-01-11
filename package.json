@@ -14,7 +14,7 @@
     "test:coverage": "cd cli && npm run test:coverage",
     "prepublishOnly": "npm run build",
     "version": "changeset version",
-    "release": "changeset publish",
+    "release": "changeset publish --provenance --access public",
     "changeset": "changeset",
     "postinstall": "echo '✨ @happytools/ai-cowork installed! Run: npx @happytools/ai-cowork init'"
   },

@@ -27,25 +27,20 @@ jobs:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install root dependencies
+      - name: Install dependencies
         run: npm install
-
-      - name: Install CLI dependencies
-        run: npm install
-        working-directory: cli
 
       - name: Build
         run: npm run build
 
       - name: Run tests
-        run: npm test
-        working-directory: cli
+        run: cd cli && npm test
 
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: npm publish --provenance --access public
+          publish: npm run release
           version: npm run version
           title: "chore: release package"
           commit: "chore: release package"
