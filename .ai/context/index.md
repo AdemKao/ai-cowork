@@ -94,6 +94,7 @@ If package.json contains "express" → node-express
 | `commit/SKILL.md` | commit changes | ~2KB |
 | `feature-decompose/SKILL.md` | large feature, split PR | ~6KB |
 | `worktree-agent/SKILL.md` | worktree, parallel agents | ~8KB |
+| `notify/SKILL.md` | send notification, task complete, need approval | ~4KB |
 
 ### Agents (load for delegation)
 
