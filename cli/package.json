@@ -1,0 +1,47 @@
+{
+  "name": "ai-dev-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CLI tool for ai-dev-system - Cross-stack AI development workflow",
+  "main": "dist/index.js",
+  "bin": {
+    "ai-dev": "./bin/ai-dev.js"
+  },
+  "scripts": {
+    "build": "bun run tsc",
+    "dev": "bun run src/index.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "ai",
+    "development",
+    "workflow",
+    "claude",
+    "opencode",
+    "cursor",
+    "standards"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "templates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdemKao/ai-dev-system.git"
+  }
+}
