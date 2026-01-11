@@ -1,10 +1,11 @@
+---
+name: fsd-slice
+description: Create a new Feature-Sliced Design (FSD) slice with proper structure. Use when creating entities, features, widgets, or pages in FSD architecture.
+---
+
 # FSD Slice Creation
 
-> Create a new Feature-Sliced Design (FSD) slice with proper structure.
-
-## Trigger
-
-Use this skill when:
+## Instructions
 - Creating a new entity (User, Product, Order)
 - Creating a new feature (login, create-post, filter-products)
 - Creating a new widget (header, sidebar, user-table)

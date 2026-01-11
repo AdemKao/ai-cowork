@@ -1,14 +1,11 @@
+---
+name: debug
+description: Systematically diagnose and fix bugs. Use when debugging errors, fixing failing tests, or investigating unexpected behavior.
+---
+
 # Debug Skill
 
-> Systematically diagnose and fix bugs.
-
-## Trigger
-
-- Error reported
-- Test failing
-- Unexpected behavior
-
-## Steps
+## Instructions
 
 1. **Reproduce the Issue**
    - Get exact steps to reproduce

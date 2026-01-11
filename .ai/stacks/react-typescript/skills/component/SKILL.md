@@ -1,14 +1,11 @@
+---
+name: react-component
+description: Create React components following project standards. Use when building new UI components, creating reusable components, or implementing designs.
+---
+
 # Component Development Skill
 
-> Create React components following project standards.
-
-## Trigger
-
-- New component needed
-- Figma design provided
-- Feature implementation requires UI
-
-## Steps
+## Instructions
 
 1. **Analyze Requirements**
    - What does the component do?

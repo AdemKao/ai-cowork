@@ -1,14 +1,11 @@
+---
+name: code-review
+description: Perform comprehensive code review for quality, security, and maintainability. Use when reviewing code changes, PRs, or when asked to check code quality.
+---
+
 # Code Review Skill
 
-> Perform comprehensive code review for quality, security, and maintainability.
-
-## Trigger
-
-- User requests code review
-- Before merging PR
-- After significant changes
-
-## Steps
+## Instructions
 
 1. **Identify Changed Files**
 

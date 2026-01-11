@@ -1,15 +1,11 @@
+---
+name: react-hook
+description: Create reusable custom hooks following React patterns. Use when creating hooks for state management, data fetching, or reusable logic.
+---
+
 # Custom Hook Development Skill
 
-> Create reusable custom hooks following React patterns.
-
-## Trigger
-
-- Logic needs to be reused across components
-- Complex state logic
-- Side effects (API calls, subscriptions)
-- Abstraction of third-party libraries
-
-## Steps
+## Instructions
 
 1. **Identify the Need**
    - What logic is being repeated?

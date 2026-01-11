@@ -1,14 +1,11 @@
+---
+name: feature-implementation
+description: Implement new features following BDD/TDD workflow. Use when building new features, implementing user stories, or adding functionality.
+---
+
 # Feature Implementation Skill
 
-> Implement new features following BDD/TDD workflow.
-
-## Trigger
-
-- New feature requested
-- Story/task assigned
-- Feature spec available
-
-## Prerequisites
+## Instructions
 
 - [ ] Feature spec exists (or create one first)
 - [ ] Dependencies identified

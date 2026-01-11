@@ -1,14 +1,11 @@
+---
+name: e2e-testing
+description: Create end-to-end tests for React applications using Playwright. Use when writing E2E tests, testing user journeys, or setting up Playwright.
+---
+
 # E2E Testing Skill
 
-> Create end-to-end tests for React applications using Playwright.
-
-## Trigger
-
-- Critical user journey needs testing
-- New feature with user interactions
-- Regression testing for existing flows
-
-## Steps
+## Instructions
 
 1. **Identify Test Scenarios**
    - What user journey to test?

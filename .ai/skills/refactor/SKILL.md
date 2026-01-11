@@ -1,15 +1,11 @@
+---
+name: refactor
+description: Safely restructure code without changing behavior. Use when refactoring, cleaning up code smells, or improving code quality.
+---
+
 # Refactor Skill
 
-> Safely restructure code without changing behavior.
-
-## Trigger
-
-- Code smell detected
-- Performance optimization needed
-- Readability improvement requested
-- Before adding new features to messy code
-
-## Prerequisites
+## Instructions
 
 - [ ] Tests exist for the code
 - [ ] All tests pass before starting

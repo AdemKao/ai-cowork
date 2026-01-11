@@ -1,15 +1,11 @@
+---
+name: documentation
+description: Create and maintain clear, useful documentation. Use when writing docs, README, API docs, guides, or ADRs.
+---
+
 # Documentation Skill
 
-> Create and maintain clear, useful documentation.
-
-## Trigger
-
-- New feature completed
-- API changed
-- Setup process changed
-- User requests documentation
-
-## Documentation Types
+## Instructions
 
 | Type     | Purpose                | Location        |
 | -------- | ---------------------- | --------------- |

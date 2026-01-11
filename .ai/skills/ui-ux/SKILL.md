@@ -1,23 +1,6 @@
 ---
 name: ui-ux
-description: "UI/UX design intelligence for professional frontend development. Styles, colors, typography, layouts, and best practices for web applications."
-triggers:
-  - build ui
-  - create page
-  - design component
-  - landing page
-  - dashboard
-  - website
-  - frontend
-  - styling
-  - responsive
-allowed-tools:
-  - Read
-  - Grep
-  - Glob
-  - Write
-  - Edit
-  - Bash
+description: UI/UX design intelligence for professional frontend development. Use when building UI, creating pages, designing components, landing pages, dashboards, or styling web applications.
 ---
 
 # UI/UX Design Skill

@@ -1,14 +1,11 @@
+---
+name: commit
+description: Create well-formatted git commits following conventional commit standards. Use when committing changes, writing commit messages, or asked to commit code.
+---
+
 # Commit Skill
 
-> Create well-formatted commits following conventional commit standards.
-
-## Trigger
-
-- User requests commit
-- After completing a task
-- Changes ready to commit
-
-## Steps
+## Instructions
 
 1. **Check Current Status**
 
