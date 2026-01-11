@@ -1,0 +1,38 @@
+{
+  "name": "php-laravel",
+  "displayName": "PHP Laravel",
+  "version": "11.x",
+  "description": "Laravel PHP framework for web applications and APIs",
+  "languages": ["php"],
+  "frameworks": ["laravel"],
+  "packageManager": "composer",
+  "standards": [
+    "standards/laravel.md",
+    "standards/php.md",
+    "standards/testing.md"
+  ],
+  "skills": [
+    "skills/controller/SKILL.md",
+    "skills/model/SKILL.md",
+    "skills/migration/SKILL.md",
+    "skills/api-resource/SKILL.md"
+  ],
+  "commands": {
+    "install": "composer install",
+    "dev": "php artisan serve",
+    "test": "php artisan test",
+    "lint": "./vendor/bin/pint",
+    "migrate": "php artisan migrate",
+    "seed": "php artisan db:seed"
+  },
+  "structure": {
+    "controllers": "app/Http/Controllers",
+    "models": "app/Models",
+    "migrations": "database/migrations",
+    "services": "app/Services",
+    "repositories": "app/Repositories",
+    "requests": "app/Http/Requests",
+    "resources": "app/Http/Resources",
+    "tests": "tests"
+  }
+}
