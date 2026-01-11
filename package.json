@@ -1,0 +1,62 @@
+{
+  "name": "ai-dev-system",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cross-stack AI development workflow system - Standards, workflows, and skills for AI-assisted development",
+  "main": "cli/dist/index.js",
+  "bin": {
+    "ai-dev": "./cli/bin/ai-dev.js"
+  },
+  "scripts": {
+    "build": "cd cli && npm run build",
+    "dev": "cd cli && npm run dev",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests yet\" && exit 0",
+    "postinstall": "echo '✨ ai-dev-system installed! Run: npx ai-dev init'"
+  },
+  "keywords": [
+    "ai",
+    "development",
+    "workflow",
+    "claude",
+    "claude-code",
+    "opencode",
+    "cursor",
+    "standards",
+    "coding-assistant",
+    "ai-agent",
+    "ai-dev",
+    "bdd",
+    "tdd"
+  ],
+  "author": "AdemKao",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  },
+  "files": [
+    "cli/dist",
+    "cli/bin",
+    ".ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdemKao/ai-dev-system.git"
+  },
+  "homepage": "https://github.com/AdemKao/ai-dev-system#readme",
+  "bugs": {
+    "url": "https://github.com/AdemKao/ai-dev-system/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

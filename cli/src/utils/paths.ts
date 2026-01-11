@@ -4,19 +4,46 @@ import { fileURLToPath } from 'url';
 
 /**
  * Get the root directory of ai-dev-system package
+ * Works both when running from source and when installed via npm
  */
 export function getPackageRoot(): string {
   const currentDir = path.dirname(fileURLToPath(import.meta.url));
   
-  // When running with bun from src/utils: go up to cli/, then to root
-  // When running from dist/utils: go up to cli/, then to root  
-  if (currentDir.includes('/src/')) {
-    // Running from source: src/utils -> src -> cli -> root
-    return path.resolve(currentDir, '..', '..', '..');
-  } else {
-    // Running from dist: dist/utils -> dist -> cli -> root
-    return path.resolve(currentDir, '..', '..', '..');
+  // When running from source: cli/src/utils -> cli/src -> cli -> root
+  // When running from dist:   cli/dist/utils -> cli/dist -> cli -> root
+  // When installed via npm:   node_modules/ai-dev-system/cli/dist/utils -> ... -> ai-dev-system
+  
+  let dir = currentDir;
+  
+  // Walk up until we find .ai directory or package.json with our name
+  for (let i = 0; i < 10; i++) {
+    const aiDir = path.join(dir, '.ai');
+    const pkgJson = path.join(dir, 'package.json');
+    
+    // Check if .ai directory exists
+    if (fs.existsSync(aiDir) && fs.statSync(aiDir).isDirectory()) {
+      return dir;
+    }
+    
+    // Check if we're at the package root
+    if (fs.existsSync(pkgJson)) {
+      try {
+        const pkg = JSON.parse(fs.readFileSync(pkgJson, 'utf-8'));
+        if (pkg.name === 'ai-dev-system' || pkg.name === '@anthropics-dev/ai-dev-cli') {
+          return dir;
+        }
+      } catch {
+        // Ignore JSON parse errors
+      }
+    }
+    
+    const parent = path.dirname(dir);
+    if (parent === dir) break; // Reached filesystem root
+    dir = parent;
   }
+  
+  // Fallback: assume we're 3 levels deep (utils -> src/dist -> cli -> root)
+  return path.resolve(currentDir, '..', '..', '..');
 }
 
 /**
