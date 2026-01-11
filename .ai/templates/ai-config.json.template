@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Dev System Project Config",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "stack": { "type": "string" },
+        "version": { "type": "string" }
+      },
+      "required": ["name", "stack"]
+    },
+    "ai": {
+      "type": "object",
+      "properties": {
+        "globalContextPath": {
+          "type": "string",
+          "description": "Path to global ai-dev-system"
+        },
+        "stackContextPath": {
+          "type": "string",
+          "description": "Path to tech stack context"
+        },
+        "useSymlinks": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "ide": {
+      "type": "object",
+      "properties": {
+        "opencode": { "type": "boolean", "default": true },
+        "claudeCode": { "type": "boolean", "default": false },
+        "cursor": { "type": "boolean", "default": false }
+      }
+    },
+    "features": {
+      "type": "object",
+      "properties": {
+        "autoInjectAgentsMd": { "type": "boolean", "default": true },
+        "conditionalRules": { "type": "boolean", "default": true },
+        "skillsEnabled": { "type": "boolean", "default": true }
+      }
+    }
+  },
+  "required": ["project"]
+}

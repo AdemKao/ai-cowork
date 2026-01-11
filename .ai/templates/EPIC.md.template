@@ -1,0 +1,142 @@
+# Epic: {{EPIC_NAME}}
+
+## Metadata
+
+| Field | Value |
+|-------|-------|
+| Epic | {{EPIC_NAME}} |
+| Module | {{MODULE_NAME}} |
+| Status | `planning` |
+| Owner | {{OWNER}} |
+| Created | {{DATE}} |
+| Updated | {{DATE}} |
+
+## Overview
+
+### Description
+
+{{EPIC_DESCRIPTION}}
+
+### Target Users
+
+- **Primary**: {{PRIMARY_USERS}}
+- **Secondary**: {{SECONDARY_USERS}}
+
+### Business Value
+
+{{BUSINESS_VALUE}}
+
+---
+
+## Features Roadmap
+
+### Phase: MVP (P0)
+
+| Feature | Description | Status | Spec |
+|---------|-------------|--------|------|
+| {{FEATURE_1}} | {{DESCRIPTION}} | `pending` | [spec](../features/{{MODULE}}/{{FEATURE_1}}.feature.md) |
+| {{FEATURE_2}} | {{DESCRIPTION}} | `pending` | [spec](../features/{{MODULE}}/{{FEATURE_2}}.feature.md) |
+
+### Phase: v1.0 (P1)
+
+| Feature | Description | Status | Spec |
+|---------|-------------|--------|------|
+| {{FEATURE_3}} | {{DESCRIPTION}} | `backlog` | - |
+| {{FEATURE_4}} | {{DESCRIPTION}} | `backlog` | - |
+
+### Phase: v1.1+ (P2)
+
+| Feature | Description | Status | Spec |
+|---------|-------------|--------|------|
+| {{FEATURE_5}} | {{DESCRIPTION}} | `backlog` | - |
+
+### Backlog (Unscheduled)
+
+- {{BACKLOG_1}}: {{DESCRIPTION}}
+- {{BACKLOG_2}}: {{DESCRIPTION}}
+
+---
+
+## Dependencies
+
+### Depends On
+
+- [x] {{DEPENDENCY_1}} - {{STATUS}}
+- [ ] {{DEPENDENCY_2}} - {{STATUS}}
+
+### Depended By
+
+- [ ] {{DEPENDENT_1}} - {{STATUS}}
+
+---
+
+## Technical Overview
+
+### Key Components
+
+```
+{{PROJECT_PATH}}/
+├── components/
+│   ├── {{COMPONENT_1}}.tsx
+│   └── {{COMPONENT_2}}.tsx
+├── hooks/
+│   └── {{HOOK_1}}.ts
+├── services/
+│   └── {{SERVICE_1}}.ts
+├── types/
+│   └── index.ts
+└── index.ts
+```
+
+### Database Tables
+
+| Table | Description |
+|-------|-------------|
+| `{{TABLE_1}}` | {{DESCRIPTION}} |
+| `{{TABLE_2}}` | {{DESCRIPTION}} |
+
+### API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| {{METHOD}} | `{{ENDPOINT}}` | {{DESCRIPTION}} |
+
+---
+
+## Success Metrics
+
+| Metric | Target | Current |
+|--------|--------|---------|
+| {{METRIC_1}} | {{TARGET}} | - |
+| {{METRIC_2}} | {{TARGET}} | - |
+
+---
+
+## Risks & Mitigations
+
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| {{RISK_1}} | {{IMPACT}} | {{MITIGATION}} |
+| {{RISK_2}} | {{IMPACT}} | {{MITIGATION}} |
+
+---
+
+## Open Questions
+
+- [ ] {{QUESTION_1}}
+- [ ] {{QUESTION_2}}
+
+---
+
+## References
+
+- [System Design](../system/{{SYSTEM_DESIGN}}.design.md)
+- [Related Epic](./{{RELATED_EPIC}}.epic.md)
+
+---
+
+## Changelog
+
+| Date | Version | Changes |
+|------|---------|---------|
+| {{DATE}} | v0.1 | Initial draft |

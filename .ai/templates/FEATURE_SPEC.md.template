@@ -1,0 +1,197 @@
+# Feature: {{FEATURE_NAME}}
+
+## Metadata
+
+| Field | Value |
+|-------|-------|
+| Feature | {{FEATURE_NAME}} |
+| Module | {{MODULE_NAME}} |
+| Status | `pending` |
+| Priority | {{PRIORITY}} |
+| Created | {{DATE}} |
+| Updated | {{DATE}} |
+
+## Overview
+
+### Description
+
+{{FEATURE_DESCRIPTION}}
+
+### Target Users
+
+- **Primary**: {{PRIMARY_USERS}}
+- **Secondary**: {{SECONDARY_USERS}}
+
+### Business Value
+
+{{BUSINESS_VALUE}}
+
+---
+
+## User Stories
+
+### Story 1: {{STORY_1_TITLE}} [Phase: MVP]
+
+**As a** {{USER_ROLE}}
+**I want to** {{ACTION}}
+**So that** {{BENEFIT}}
+
+#### Acceptance Criteria
+
+- [ ] AC1: {{ACCEPTANCE_CRITERIA_1}}
+- [ ] AC2: {{ACCEPTANCE_CRITERIA_2}}
+- [ ] AC3: {{ACCEPTANCE_CRITERIA_3}}
+
+#### BDD Scenarios
+
+```gherkin
+Scenario: {{SCENARIO_1_TITLE}}
+  Given {{PRECONDITION}}
+  When {{ACTION}}
+  Then {{EXPECTED_RESULT}}
+
+Scenario: {{SCENARIO_2_TITLE}}
+  Given {{PRECONDITION}}
+  When {{ACTION}}
+  Then {{EXPECTED_RESULT}}
+```
+
+| Status | Notes |
+|--------|-------|
+| `pending` | |
+
+---
+
+### Story 2: {{STORY_2_TITLE}} [Phase: MVP]
+
+**As a** {{USER_ROLE}}
+**I want to** {{ACTION}}
+**So that** {{BENEFIT}}
+
+#### Acceptance Criteria
+
+- [ ] AC1: {{ACCEPTANCE_CRITERIA_1}}
+- [ ] AC2: {{ACCEPTANCE_CRITERIA_2}}
+
+#### BDD Scenarios
+
+```gherkin
+Scenario: {{SCENARIO_TITLE}}
+  Given {{PRECONDITION}}
+  When {{ACTION}}
+  Then {{EXPECTED_RESULT}}
+```
+
+| Status | Notes |
+|--------|-------|
+| `pending` | |
+
+---
+
+## Technical Requirements
+
+### Components
+
+| Component | Description | Location |
+|-----------|-------------|----------|
+| {{COMPONENT_1}} | {{DESCRIPTION}} | `features/{{MODULE}}/components/` |
+| {{COMPONENT_2}} | {{DESCRIPTION}} | `features/{{MODULE}}/components/` |
+
+### Hooks
+
+| Hook | Description | Location |
+|------|-------------|----------|
+| {{HOOK_1}} | {{DESCRIPTION}} | `features/{{MODULE}}/hooks/` |
+
+### Services
+
+| Service | Description | Location |
+|---------|-------------|----------|
+| {{SERVICE_1}} | {{DESCRIPTION}} | `features/{{MODULE}}/services/` |
+
+### API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| {{METHOD}} | {{ENDPOINT}} | {{DESCRIPTION}} |
+
+---
+
+## UI/UX Requirements
+
+### Wireframe
+
+```
+{{ASCII_WIREFRAME}}
+```
+
+### Figma Links
+
+| Component | Link | Status |
+|-----------|------|--------|
+| {{COMPONENT}} | [Link]({{FIGMA_URL}}) | `pending` |
+
+---
+
+## Dependencies
+
+### Depends On
+
+- [ ] {{DEPENDENCY_1}}
+- [ ] {{DEPENDENCY_2}}
+
+### Depended By
+
+- [ ] {{DEPENDENT_1}}
+
+---
+
+## Implementation Hints
+
+### Suggested Order
+
+1. {{STEP_1}}
+2. {{STEP_2}}
+3. {{STEP_3}}
+
+### Patterns to Follow
+
+- {{PATTERN_1}}
+- {{PATTERN_2}}
+
+### Pitfalls to Avoid
+
+- {{PITFALL_1}}
+- {{PITFALL_2}}
+
+---
+
+## Testing Requirements
+
+### Unit Tests
+
+- [ ] {{UNIT_TEST_1}}
+- [ ] {{UNIT_TEST_2}}
+
+### Integration Tests
+
+- [ ] {{INTEGRATION_TEST_1}}
+
+### E2E Tests
+
+- [ ] {{E2E_TEST_1}}
+
+---
+
+## Open Questions
+
+- [ ] {{QUESTION_1}}
+- [ ] {{QUESTION_2}}
+
+---
+
+## Changelog
+
+| Date | Version | Changes |
+|------|---------|---------|
+| {{DATE}} | v0.1 | Initial draft |

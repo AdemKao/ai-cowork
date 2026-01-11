@@ -1,0 +1,102 @@
+# {{PROJECT_NAME}}
+
+> {{PROJECT_DESCRIPTION}}
+
+## Project Overview
+
+| Field | Value |
+|-------|-------|
+| **Project** | {{PROJECT_NAME}} |
+| **Tech Stack** | {{TECH_STACK}} |
+| **Status** | {{STATUS}} |
+
+## AI Agent Instructions
+
+### Context Loading
+
+Before any task execution, load relevant context:
+
+| Task Type | Load |
+|-----------|------|
+| Code changes | `standards/code.md` |
+| Testing | `standards/testing.md` |
+| Documentation | `standards/documentation.md` |
+| All tasks | This file (AGENTS.md) |
+
+### Project Structure
+
+```
+{{PROJECT_STRUCTURE}}
+```
+
+### Key Patterns
+
+{{KEY_PATTERNS}}
+
+### Dependency Rules
+
+{{DEPENDENCY_RULES}}
+
+---
+
+## Development Workflow
+
+### For New Features
+
+1. Read feature spec: `docs/specs/features/{module}/{feature}.feature.md`
+2. Follow BDD/TDD workflow (see `workflows/bdd-tdd.md`)
+3. Implement with tests
+4. Request review
+
+### For Bug Fixes
+
+1. Reproduce the issue
+2. Write failing test
+3. Fix the bug
+4. Verify tests pass
+
+### For Refactoring
+
+1. Ensure tests exist
+2. Make incremental changes
+3. Run tests after each change
+4. Commit frequently
+
+---
+
+## Commands
+
+```bash
+# Development
+{{DEV_COMMANDS}}
+
+# Testing
+{{TEST_COMMANDS}}
+
+# Build
+{{BUILD_COMMANDS}}
+```
+
+---
+
+## Code Style
+
+{{CODE_STYLE}}
+
+---
+
+## Feature Modules
+
+{{FEATURE_MODULES}}
+
+---
+
+## API Overview
+
+{{API_OVERVIEW}}
+
+---
+
+## Important Notes
+
+{{IMPORTANT_NOTES}}

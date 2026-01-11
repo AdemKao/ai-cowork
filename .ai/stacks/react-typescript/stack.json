@@ -1,0 +1,64 @@
+{
+  "name": "react-typescript",
+  "description": "React + TypeScript + Vite stack",
+  "version": "1.0.0",
+  "dependencies": {
+    "runtime": [
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "@tanstack/react-query",
+      "zustand",
+      "react-hook-form",
+      "@hookform/resolvers",
+      "zod"
+    ],
+    "ui": [
+      "tailwindcss",
+      "@radix-ui/react-*",
+      "class-variance-authority",
+      "clsx",
+      "tailwind-merge",
+      "lucide-react"
+    ],
+    "dev": [
+      "typescript",
+      "vite",
+      "@vitejs/plugin-react",
+      "vitest",
+      "@testing-library/react",
+      "@testing-library/user-event",
+      "playwright",
+      "msw"
+    ]
+  },
+  "structure": {
+    "src": {
+      "app": "Route definitions and app setup",
+      "features": "Feature modules (vertical slices)",
+      "shared": "Shared components, hooks, utils",
+      "services": "External service integrations",
+      "store": "Global state (Zustand)",
+      "styles": "Global styles",
+      "types": "Shared TypeScript types",
+      "test": "Test utilities and setup"
+    },
+    "e2e": "End-to-end tests"
+  },
+  "conventions": {
+    "components": "PascalCase, .tsx extension",
+    "hooks": "camelCase with use prefix, .ts extension",
+    "utils": "camelCase, .ts extension",
+    "tests": ".test.ts or .test.tsx, colocated with source",
+    "styles": "Tailwind CSS, cn() helper for conditional classes"
+  },
+  "patterns": [
+    "Functional components only",
+    "Custom hooks for reusable logic",
+    "React Query for server state",
+    "Zustand for client state",
+    "React Hook Form + Zod for forms",
+    "Path aliases (@/)",
+    "Feature-based folder structure"
+  ]
+}
